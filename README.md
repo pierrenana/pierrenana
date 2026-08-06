@@ -43,4 +43,4 @@ Building an app from scratch, taking over an existing one, or getting a React Na
 - French and English, meetings included
 - Epitech Grande École programme, MSc, 2020–2025 · 4 years of professional experience
 
-[Malt](https://www.malt.fr/profile/pierrenana) · [LinkedIn](https://www.linkedin.com/in/pierrenana/)
+[contact@pierrenana.com](mailto:contact@pierrenana.com) · [Malt](https://www.malt.fr/profile/pierrenana) · [LinkedIn](https://www.linkedin.com/in/pierrenana/)
