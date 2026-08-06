@@ -12,31 +12,9 @@ Freelance developer, based in Marseille, France. Fully remote. I work in French 
 
 A social network for athletes. LinkedIn ignores performance, Instagram ignores the record — Kelenz puts both in one profile: sport, positions, season stats, trophies, club history, with a full social layer on top.
 
-I'm a competitive athlete myself, and I had nowhere to exist online as one. I built what was missing, on iOS, Android and the web.
+I'm a competitive athlete myself, and I had nowhere to exist online as one. So I built what was missing — designed, developed and shipped alone, on iOS, Android and the web.
 
 [App Store](https://apps.apple.com/us/app/kelenz/id6758309487) · [Google Play](https://play.google.com/store/apps/details?id=com.kelenz.app) · [kelenz.com](https://kelenz.com)
-
-Product design, architecture and development — three platforms, one person, three separately deployed repositories behind a single API.
-
-| | |
-|---|---|
-| **Mobile** — iOS + Android | React Native, Expo SDK 56, expo-router, TanStack Query, Zustand, i18next |
-| **Web** — public pages, shareable profiles, admin back-office | Next.js 15 (App Router), React 19, Tailwind v4, next-intl |
-| **API** — business logic, real time, media | NestJS 11, PostgreSQL (Neon), Drizzle ORM, native WebSocket |
-
-Verified in the codebase, not estimated:
-
-- ~100,000 lines of strict TypeScript · ~1,900 commits · 188 test files (unit, integration, end-to-end against a real database)
-- 29 controllers · ~100 API endpoints · 35 tables · 25 hand-written SQL migrations · 70 mobile routes
-- 83 sports · 3 profile types · FR/EN everywhere, down to push notifications and transactional emails
-
-### Three things worth naming
-
-**A full backend migration, with no downtime.** From a serverless architecture (Supabase Edge Functions, Deno, ~70 functions) to a NestJS monolith on Postgres — while mobile and web clients stayed in production the whole way. What I was after: end-to-end typing, real integration tests, an explicit domain, and a predictable bill.
-
-**Removing a product, not only adding to one.** Kelenz shipped with a B2B vertical for clubs — dashboard, teams, matches, Stripe subscriptions. Pivoting to consumer meant taking all of it out: schema, endpoints, screens, translations, with no regression on what stayed. Deleting code is the part nobody practises.
-
-**Real time that degrades properly.** An authenticated WebSocket gateway feeds messaging and notifications while the app is in the foreground; Expo push takes over in the background. Reconnecting invalidates the cache rather than replaying events — simple, and hard to get wrong.
 
 ---
 
