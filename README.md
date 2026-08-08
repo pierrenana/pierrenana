@@ -25,7 +25,7 @@ I'm a competitive athlete myself, and I had nowhere to exist online as one. So I
 **Shipping** — App Store and Google Play submissions, signing, certificates, review, CI/CD
 **Infrastructure** — Railway, Neon, Cloudflare R2, GitHub Actions, Sentry, PostHog
 
-I write React Native, and I go down into native when a project calls for it — a native module, an Xcode or Gradle build that won't cooperate, an SDK with no JS binding. If you need genuinely native Swift or Kotlin work, I'll tell you so rather than sell you cross-platform.
+I write React Native, and I go down into native when a project calls for it — a native module, an Xcode or Gradle build that won't cooperate, an SDK with no JS binding or else directly Swift / Kotlin.
 
 ---
 
